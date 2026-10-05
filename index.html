@@ -81,7 +81,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,248,239,.94);backdro
 
 <footer>
 <div class="container footer-grid">
- <div><img src="/file_00000000aa9c8210bfbcd9d881b161d8.png" alt="Amy's logo" style="width:90px;height:90px;object-fit:contain;background:#fff;border-radius:50%"><h3>Amy's Creamy Lick & Sips</h3><p>Home of natural blends.</p></div>
+ <div><img src="file_00000000aa9c8210bfbcd9d881b161d8.png" alt="Amy's logo" style="width:90px;height:90px;object-fit:contain;background:#fff;border-radius:50%"><h3>Amy's Creamy Lick & Sips</h3><p>Home of natural blends.</p></div>
  <div><h3>Shop</h3><a href="#menu">Greek Yogurt Parfait</a><a href="#menu">Probiotic Yogurt</a><a href="#menu">Plain Greek Yogurt</a><a href="#menu">Fruity Zobo</a></div>
  <div><h3>Customer</h3><a href="#" id="footerAccount">Login / Sign up</a><a href="#" id="footerOrders">My Orders</a><a href="https://wa.me/2349159594737" target="_blank">WhatsApp: 09159594737</a></div>
 </div><div class="container copyright">© <span id="year"></span> Amy's Creamy Lick & Sips. All rights reserved.</div>
@@ -121,19 +121,19 @@ const auth=getAuth(app), db=getFirestore(app);
 const ADMIN_EMAIL="alexartie347@gmail.com", WA_NUMBER="2349159594737";
 const products=[
 {id:"p350",name:"350ml Greek Yogurt Parfait Cup",price:4500,img:"https://d1w7312wesee68.cloudfront.net/yOp47GgVUXSFxvEPRQH3NnfzIYDzcsWXcRO52z0_oqs/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-269546000000000000/menu/items/5/item-1400000005819001515_1778167376.png",tag:"Parfait"},
-{id:"p450",name:"450ml Greek Yogurt Parfait Cup",price:6000,img:"/20261005_093930.png",tag:"Parfait"},
-{id:"p500",name:"500ml Greek Yogurt Parfait Plate",price:7500,img:"/20261005_093806.png",tag:"Parfait"},
-{id:"p550",name:"550ml Greek Yogurt Parfait Plate",price:8000,img:"/20261005_093852.png",tag:"Parfait"},
-{id:"p1l",name:"1 Liter Greek Yogurt Parfait Bowl",price:15000,img:"/20261005_093630.png",tag:"Parfait"},
-{id:"p2l",name:"2 Liter Greek Yogurt Parfait Bowl",price:28500,img:"/20261005_093630.png",tag:"Parfait"},
-{id:"p4l",name:"4 Liter Greek Yogurt Parfait Bowl",price:58500,img:"/20261005_093615.png",tag:"Parfait"},
-{id:"b35",name:"35cl Probiotic Bottled Yogurt",price:1800,img:"/20261005_093913.png",tag:"Probiotic"},
-{id:"b50",name:"50cl Probiotic Bottled Yogurt",price:2500,img:"/20261005_093913.png",tag:"Probiotic"},
-{id:"plain500",name:"500ml Plain Greek Yogurt Plate",price:5000,img:"/20261005_094000.png",tag:"Plain Greek Yogurt"},
-{id:"plain1",name:"1 Liter Plain Greek Yogurt Plate",price:10000,img:"/20261005_111512.png",tag:"Plain Greek Yogurt"},
-{id:"plain2",name:"2 Liter Plain Greek Yogurt Plate",price:18500,img:"/20261005_093945.png",tag:"Plain Greek Yogurt"},
-{id:"plain4",name:"4 Liter Plain Greek Yogurt Plate",price:38500,img:"/file_000000001a848243a49b858c2006208d.png",tag:"Plain Greek Yogurt"},
-{id:"zobo50",name:"50cl Fruity Zobo Drink",price:2500,img:"/20261005_093450.png",tag:"Fruity Zobo"},
+{id:"p450",name:"450ml Greek Yogurt Parfait Cup",price:6000,img:"20261005_093930.png",tag:"Parfait"},
+{id:"p500",name:"500ml Greek Yogurt Parfait Plate",price:7500,img:"20261005_093806.png",tag:"Parfait"},
+{id:"p550",name:"550ml Greek Yogurt Parfait Plate",price:8000,img:"20261005_093852.png",tag:"Parfait"},
+{id:"p1l",name:"1 Liter Greek Yogurt Parfait Bowl",price:15000,img:"20261005_093630.png",tag:"Parfait"},
+{id:"p2l",name:"2 Liter Greek Yogurt Parfait Bowl",price:28500,img:"20261005_093630.png",tag:"Parfait"},
+{id:"p4l",name:"4 Liter Greek Yogurt Parfait Bowl",price:58500,img:"20261005_093615.png",tag:"Parfait"},
+{id:"b35",name:"35cl Probiotic Bottled Yogurt",price:1800,img:"20261005_093913.png",tag:"Probiotic"},
+{id:"b50",name:"50cl Probiotic Bottled Yogurt",price:2500,img:"20261005_093913.png",tag:"Probiotic"},
+{id:"plain500",name:"500ml Plain Greek Yogurt Plate",price:5000,img:"20261005_094000.png",tag:"Plain Greek Yogurt"},
+{id:"plain1",name:"1 Liter Plain Greek Yogurt Plate",price:10000,img:"20261005_111512.png",tag:"Plain Greek Yogurt"},
+{id:"plain2",name:"2 Liter Plain Greek Yogurt Plate",price:18500,img:"20261005_093945.png",tag:"Plain Greek Yogurt"},
+{id:"plain4",name:"4 Liter Plain Greek Yogurt Plate",price:38500,img:"file_000000001a848243a49b858c2006208d.png",tag:"Plain Greek Yogurt"},
+{id:"zobo50",name:"50cl Fruity Zobo Drink",price:2500,img:"20261005_093450.png",tag:"Fruity Zobo"},
 {id:"sweet500",name:"500ml Creamy Sweetened Greek Yogurt",price:8000,img:"https://images.unsplash.com/photo-1722607571891-7ab5396a1b83?auto=format&fit=crop&fm=jpg&q=85&w=1200",tag:"Greek Yogurt"}
 ];
 let cart=JSON.parse(localStorage.getItem("amys_cart")||"[]"), currentUser=null, unsubOrders=null, unsubAdmin=null, authMode="login";
